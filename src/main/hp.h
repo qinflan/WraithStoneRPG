@@ -12,8 +12,15 @@ class hp {
 
             if (CurrentHP > MaxHP)
                 CurrentHP = MaxHP;
-
             return true;
+        }
+
+        hptype getMaxHP() {
+            return MaxHP;
+        }
+
+        hptype getCurrentHP() {
+            return MaxHP;
         }
 
         void takeDamage(hptype damage) {
@@ -21,7 +28,6 @@ class hp {
                 CurrentHP = 0;
                 return;
             }
-
             CurrentHP -= damage;
         }
 
@@ -30,10 +36,8 @@ class hp {
                 CurrentHP = MaxHP;
                 return;
             }
-
             CurrentHP += amount;
         }
-
 
     private:
         hptype CurrentHP;
