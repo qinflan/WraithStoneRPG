@@ -1,4 +1,8 @@
 #include <iostream>
+#include "warrior.h"
+#include "mage.h"
+#include "paladin.h"
+#include "rogue.h"
 
 
 //   __    __  ____    ____  ____  ______  __ __   _____ ______   ___   ____     ___     
@@ -21,7 +25,10 @@
 
 
 int main() {
-
+    Warrior warr1;
+    Mage mage1;
+    Paladin paladin1;
+    Rogue rog1;
 
 
     return 0;
